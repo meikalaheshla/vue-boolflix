@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <input type="text"><button @click="">cerca</button>
+    <input type="text"><button>cerca</button>
     <div>
       <h2>FILM</h2>
       <ul>
@@ -16,6 +16,13 @@
 export default {
   name: 'App',
   components: {
+
+  }, data() {
+    return {
+      films: [],
+      searchTxt: "",
+    }
+  }, methods: {
 
   }
 
